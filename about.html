@@ -34,6 +34,10 @@
     <!-- Core Style Css -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Calendly -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
 
 </head>
 
@@ -96,20 +100,14 @@
             </button>
 
             <!-- navbar links -->
-            <div>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li>
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html"><span class="rolling-text">Home</span></a>
                     </li>
-
-                    <li>
+                    <li class="nav-item">
                         <a class="nav-link" href="about.html"><span class="rolling-text">About</span></a>
                     </li>
-
-                    <li>
-                        <a class="nav-link" href="admission.html"><span class="rolling-text">Admission</span></a>
-                    </li>
-
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="rolling-text">Our Team</span>
@@ -119,28 +117,34 @@
                             <a class="dropdown-item" href="amirunteam.html">Cricket Team</a>
                         </div>
                     </li>
-
                     <li>
                         <a class="nav-link" href="portfolio.html"><span class="rolling-text">Portfolio</span></a>
                     </li>
-
-                    <li>
-                        <a class="nav-link" href="#"><span class="rolling-text">Shop</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admission.html"><span class="rolling-text">Admission</span></a>
                     </li>
-
-                    <li>
-                        <a class="nav-link" href="contact.html"><span class="rolling-text">Contact</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://shop.amirunsritycricketacademy.com"><span class="rolling-text">Shop</span></a>
                     </li>
-                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-contact.html"><span class="rolling-text">Contact</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/booking-asca-bd/book-a-time'});return false;"><span class="rolling-text">Book now</span></a>
+                    </li>
                 </ul>
             </div>
 
-            <div class="search-form">
-                
-                <div class="search-icon">
-                    
+            <!-- <div class="search-form">
+                <div class="form-group">
+                    <input type="text" name="search" placeholder="Search">
+                    <button><span class="pe-7s-search"></span></button>
                 </div>
-            </div>
+                <div class="search-icon">
+                    <span class="pe-7s-search open-search"></span>
+                    <span class="pe-7s-close close-search"></span>
+                </div>
+            </div> -->
         </div>
     </nav>
 
