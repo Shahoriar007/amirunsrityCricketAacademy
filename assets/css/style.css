@@ -19,8 +19,18 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   outline: none;
-  list-style: none;
 }
+
+ul {
+  list-style-type: disc; /* Ensure bullets are displayed */
+  padding-left: 20px; /* Indent the list */
+}
+
+.rest {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 
 body {
   color: #fff;
@@ -614,6 +624,31 @@ img {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+
+.book-now-btn {
+  font-weight: bold;
+  color: #0f0f0f;
+  text-transform: uppercase;
+  height: 45px; /* Set a fixed height */
+  padding: 0 20px; /* Adjust side padding as needed */
+  border-radius: 10px;
+  background-color: #55E6A4;
+  box-shadow: 0 0 15px #84ffc8;
+  transition: all 0.3s ease;
+  position: relative;
+  top: 10px; /* Positive value lowers the button, negative raises it */
+  
+  /* Flexbox for centering text */
+  display: flex;
+  align-items: center; /* Vertically centers the text */
+  justify-content: center; /* Horizontally centers the text */
+}
+
+.book-now-btn:hover {
+  background-color: #55E6A4; /* Darker shade on hover */
+  box-shadow: 0 0 25px #84ffc8; /* Stronger glow on hover */
+  color: #292929;
 }
 
 /* Cursor
@@ -1603,11 +1638,19 @@ img.left {
 }
 
 .icon-img-100 {
-  width: 100px;
+  width: 150px;
 }
 
 .icon-img-120 {
   width: 120px;
+}
+
+/* Adjust logo size for phone screens (screens up to 600px wide) */
+@media (max-width: 600px) {
+  .icon-img-100 img {
+      width: 100px; /* Adjust this size as needed */
+      height: auto;
+  }
 }
 
 /*-------------------------------------------------------
@@ -5904,6 +5947,21 @@ footer .bg-pattern {
   pointer-events: none;
   opacity: .5;
 }
+
+.text-justify {
+  text-align: justify;
+}
+
+.bullet-list {
+  list-style-type: disc;  /* Ensure bullets appear */
+  padding-left: 20px;     /* Add padding to ensure bullets are not too close to the text */
+  margin: 0;              /* Remove any default margin */
+}
+
+.bullet-list li {
+  margin-bottom: 5px;     /* Add some space between each item */
+}
+
 
 /* Pages Header
 -----------------------------------------------------------------*/
